@@ -19,3 +19,7 @@ let port = 8000;
 app.listen(port, () => {
     console.log(`Running at localhost: ${port}`);
 });
+
+app.get("/", (req,res) => {
+    res.send("Working")
+})
